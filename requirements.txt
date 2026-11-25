@@ -1,0 +1,7 @@
+# Dependensi LOKAL ringan (Spark/Sedona/Airflow ada di image Docker, lihat airflow/Dockerfile)
+requests
+pandas
+pyarrow
+python-dotenv
+ruff
+pre-commit
