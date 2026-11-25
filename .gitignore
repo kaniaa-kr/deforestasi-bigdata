@@ -1,11 +1,26 @@
-data/raw/*
-data/processed/*
-*.csv
+# --- secrets ---
+.env
+configs/secrets/
+*.json.key
+gcp-sa*.json
+
+# --- data & artefak besar ---
+data/*
+!data/.gitkeep
+*.tif
+*.parquet
 *.zip
 *.shp
 *.dbf
 *.shx
 *.prj
-.env
+*.cpg
+
+# --- airflow / python ---
+airflow/logs/
 __pycache__/
+.venv/
 .ipynb_checkpoints/
+.DS_Store
+spark-warehouse/
+metastore_db/
